@@ -22,6 +22,7 @@ requirements:
     - pip
     - setuptools_scm
     - setuptools_scm_git_archive
+    - pbr
   run:
     - python
     - ansible-lint >=4.0.2,<5
