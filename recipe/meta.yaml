@@ -10,7 +10,7 @@ source:
   sha256: 621797c54299775f284bbb010d5bb9be485500eecaaa14a476cbc0df285d0da7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
@@ -42,6 +42,7 @@ requirements:
     - tabulate ==0.8.2
     - testinfra ==1.19.0
     - tree-format ==0.1.2
+    - yamllint
 
 test:
   imports:
