@@ -37,14 +37,14 @@ requirements:
     - python-gilt >=1.2.1,< 2
     - Jinja2 >=2.10.1
     - paramiko >=2.5.0,< 3
-    - pathlib2 # [py<32]
+    - pathlib2  # [py<32]
     - pexpect >=4.6.0,< 5
     - pluggy >=0.7.1,< 1.0
     - pre-commit >=1.17.0,< 2
     - PyYAML >=5.1,< 6
     - sh >=1.12.14
     - six >=1.11.0
-    - subprocess32 # [py<35]
+    - subprocess32  # [py<35]
     - tabulate >=0.8.4
     - tree-format >=0.1.2
     - yamllint >=1.15.0,< 2
