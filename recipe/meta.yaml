@@ -1,5 +1,5 @@
 {% set name = "molecule" %}
-{% set version = "2.22" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d9d7621167041ae2a8eb19f1f8dc23c071cdab2cd3ca80655e2c8796b4c00e09
+  sha256: c83f90cb8dc87f6663475711ac8c4f4c2112a1ff89ccb6665f0e3376032e77a7
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
 
@@ -57,7 +57,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Molecule aids in the development and testing of Ansible roles'
+  summary: Molecule aids in the development and testing of Ansible roles
 
   description: |
     Molecule is designed to aid in the development and testing
