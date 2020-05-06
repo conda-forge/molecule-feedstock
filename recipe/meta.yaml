@@ -10,7 +10,7 @@ source:
   sha256: 29137de659d45ecdef28d107c0dc7e85ab3d5e37d5d17813430a7cc15be5b02e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -32,6 +32,7 @@ requirements:
     - cerberus <=1.3.1
     - click >=6.7
     - click-completion >=0.3.1
+    - click-help-colors >=0.8
     - colorama >=0.3.9
     - cookiecutter >=1.6.0
     - python-gilt >=1.2.1,< 2
@@ -51,6 +52,8 @@ requirements:
 test:
   imports:
     - molecule
+  commands:
+    - molecule --version
 
 about:
   home: https://github.com/ansible/molecule
