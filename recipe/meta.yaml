@@ -52,6 +52,8 @@ requirements:
 test:
   imports:
     - molecule
+  commands:
+    - molecule --version
 
 about:
   home: https://github.com/ansible/molecule
