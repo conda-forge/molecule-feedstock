@@ -5,7 +5,7 @@ Home: https://github.com/ansible/molecule
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Molecule aids in the development and testing of Ansible roles
 
