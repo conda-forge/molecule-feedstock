@@ -10,7 +10,7 @@ source:
   sha256: 9e360073598d45ec86036d84084fc6493dfc4270fd7600ee9ebe0ce03a0af6e5
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
