@@ -1,5 +1,5 @@
 {% set name = "molecule" %}
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9e360073598d45ec86036d84084fc6493dfc4270fd7600ee9ebe0ce03a0af6e5
+  sha256: 1c3d2e1b20ffe70b556923994516d5bc7774f59e89fa877d3d14e25eefb23ece
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
-  skip: True  # [py < 37 or win]
+  skip: true  # [py < 37 or win]
 
 requirements:
   host:
