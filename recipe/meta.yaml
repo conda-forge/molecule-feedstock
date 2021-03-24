@@ -1,5 +1,5 @@
 {% set name = "molecule" %}
-{% set version = "3.2.4" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48b708fabfb983fbe3c9d6ed6dcb350097d6a6cff297fd7d79ce3d46724c5c7c
+  sha256: e09cee3f1cc6d8321a074b751dc7bd85c7118dffde6d0016941e1a3c6090fef2
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
   run:
     # core dependencies
     - python
+    - ansible-lint >=5.0.5
     - cerberus >=1.3.1
     - click >=7.0,<8.0
     - click-completion >=0.5.1
@@ -63,10 +64,9 @@ requirements:
     - pytest >=6.1.2
 
     # lint
-    - ansible-lint >=4.2.0,<5
-    - flake8 >=3.6.0
+    - flake8 >=3.8.4
     - pre-commit >=1.21.0
-    - yamllint >=1.15.0
+    - yamllint
 
 test:
   imports:
