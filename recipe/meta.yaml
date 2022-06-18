@@ -10,7 +10,7 @@ source:
   sha256: 3b7d5ba2978c15a034df8c7aa59dec5436f7d3260d1f9db2c78ae14ae3a9deeb
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
@@ -38,7 +38,7 @@ requirements:
     - packaging
     - paramiko >=2.5.0,<3
     - pluggy >=0.7.1,<2
-    - PyYAML >=5.1,< 6
+    - PyYAML >=5.1
     - rich >=9.5.1
 
     # ansible
