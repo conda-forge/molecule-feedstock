@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
-  skip: true  # [py < 37 or win]
+  skip: true  # [py < 38 or win]
 
 requirements:
   host:
@@ -33,18 +33,13 @@ requirements:
     - click >=8.0,<9
     - click-help-colors >=0.9
     - cookiecutter >=1.7.3
-    - dataclasses  # [py < 37]
     - enrich  >=1.2.5
     - Jinja2 >=2.10.1
     - packaging
     - paramiko >=2.5.0,<3
-    - pluggy >=0.7.1,<1.0
+    - pluggy >=0.7.1,<2
     - PyYAML >=5.1,< 6
     - rich >=9.5.1
-    - subprocess-tee >=0.2.0
-    - setuptools >=42
-    - yamllint >=1.15.0,< 2
-    - python-selinux  # [linux]
 
     # ansible
     - ansible >=2.10
