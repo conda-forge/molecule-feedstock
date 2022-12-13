@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
-  skip: true  # [py < 38 or win]
+  skip: true  # [py < 39 or win]
 
 requirements:
   host:
