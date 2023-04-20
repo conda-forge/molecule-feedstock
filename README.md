@@ -1,11 +1,11 @@
-About molecule
-==============
+About molecule-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/molecule-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ansible/molecule
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/molecule-feedstock/blob/main/LICENSE.txt)
 
 Summary: Molecule aids in the development and testing of Ansible roles
 
