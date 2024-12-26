@@ -1,5 +1,6 @@
 {% set name = "molecule" %}
 {% set version = "24.12.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +11,7 @@ source:
   sha256: 7243ff58e0b8159aa2cf465ba9605d657f1d614617264307bef5b32518467afe
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - molecule = molecule.__main__:main
@@ -18,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip >=19.3.1
     - setuptools >=63
     - setuptools_scm >=7
   run:
     # core dependencies
-    - python >=3.9
+    - python >={{ python_min }}
     - ansible-compat >=4.1.2
     - ansible-core >=2.12.10
     - click >=8.0,<9
@@ -39,6 +40,8 @@ requirements:
     - wcmatch >=8.1.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - molecule
   commands:
