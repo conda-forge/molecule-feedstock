@@ -1,5 +1,5 @@
 {% set name = "molecule" %}
-{% set version = "26.3.0" %}
+{% set version = "26.4.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e48c92383be5e580545dcc7d115b3f3559d6d5f28e1ab151a35dc780b7400a66
+  sha256: 12e4c905079f67628ae765506c697d2b8a744a65f2d4cbf5a3b22cb09d0dafc4
 
 build:
   number: 0
