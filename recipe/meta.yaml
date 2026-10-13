@@ -1,5 +1,5 @@
 {% set name = "molecule" %}
-{% set version = "26.9.0" %}
+{% set version = "26.10.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1c44254eb173d0a3a48217b874d19bfa436614fb0c6faa75d9b192a843360188
+  sha256: 32533aaba78c29eed80bcaab5d03ff63fe48b8f43071cf77953f391e0732d439
 
 build:
   number: 0
